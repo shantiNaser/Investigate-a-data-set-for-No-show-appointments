@@ -20,25 +20,38 @@ This dataset collects information from 110,527 medical appointments in Brazil an
 * No-show: This is a binary field with values True or False, indicating whether the patient attended the appointment, where True means the patient did not show up for the appointment, and False means they did.
 
 # Conclusions
-after a deep dive in the data, understanding variables, and finding the correlations I ended up with this result
-1. What factors are important for us to know in order to predict if a patient will show up for their scheduled appointment?
-    * appointments scheduled on Mondays or during holidays might have higher no-show rates. so Date is important
-    * Younger or older patients might have higher no-show rates. age is also important
-    * No-show History: Patients who have a history of missing appointments are likely to continue this behavior.
-       * Note:- can we add a flag on this patient in order to notify him when he/she requests a new appointment later
+After conducting a thorough analysis of the data, examining the variables, and identifying correlations, the following insights were obtained:
+1. Key Factors for Predicting Patient Attendance:
+    * Appointment Date: Appointments scheduled on Mondays or during holidays tend to have higher no-show rates. Therefore, the appointment date is a crucial factor.
+    * Patient Age: Younger and older patients are more likely to miss their appointments, making age an important predictor.
+    * No-Show History: Patients with a history of missed appointments are more likely to continue this behavior.
+       * Recommendation: Implement a flagging system for patients with a history of no-shows to send reminders when they request future appointments.
 
-2. Is there any patient who frequently schedules appointments but often does not show up?
-    * yes there are many patients who have a Frequency of Appointments: as a solution Patients who schedule appointments frequently but often do not show up can be identified and flagged for additional appointments. 
+2. Identifying Frequent No-Show Patients:
+    * There are several patients who frequently schedule appointments but often fail to attend.
+       * Recommendation: Identify and flag these patients to provide additional support or reminders for their appointments.
 
-3. What is the average old for the patients who schedule an appointments but does not show up?
-    * I just asked this question in order to check if the Patient who registered is a Younger. So we can just accept the registration from older people
+3. Average Age of No-Show Patients:
+    * The analysis explored the average age of patients who do not attend their appointments to determine if younger patients are more likely to miss appointments.
+       * Recommendation: Consider strategies that may be more effective in encouraging younger patients to attend, or adjust the scheduling criteria to prioritize older patients.
 
-4. What is the Neighbourhood for the patient who scheduled an appointment but does not show up? Is there an issue with that Neighbourhood if it's frequently repeated for multiple patients for the same Neighbourhood
-    * yes I have noticed that there are many Neighbourhood with no show-up patients reported
-    * Example an idea:- we can check if there's an issue in JARDIM CAMBURI during May maybe inside this area or city since there's a lot of no show up appear in this month
+4. Impact of Neighborhood on No-Show Rates:
+    * There are certain neighborhoods where no-show rates are significantly higher.
+       * Recommendation: Investigate if specific neighborhoods, such as JARDIM CAMBURI during May, have underlying issues contributing to the higher no-show rates. Addressing these issues may help reduce missed appointments.
 
-5. does the Patient who does not show up to the appointment received a message before his appointment? if No what is the date on which the appointment was scheduled for him?
-    * about 12535 users did not receive a message before their appointment -> so sending a message is very important
+5. Importance of Appointment Reminders:
+    * A significant number of patients (approximately 12,535) did not receive a reminder message before their appointment.
+       * Recommendation: Ensure that reminder messages are sent to all patients before their appointments, as this could significantly reduce no-show rates.
+
+# Visualization Area
+   * The following visualizations have been generated from the analysis code to provide a clearer understanding of the key insights:
+     <img width="913" alt="image" src="https://github.com/user-attachments/assets/238969df-c79f-4846-95b8-33f6f0302d2d">
+
+
+
+# Reviwer Feedback
+<img width="754" alt="image" src="https://github.com/user-attachments/assets/318193ae-930d-4657-9a80-ea51f0814a0a">
+
  
 
 
