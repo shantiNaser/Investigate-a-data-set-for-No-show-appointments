@@ -19,6 +19,13 @@ This dataset collects information from 110,527 medical appointments in Brazil an
 * SMS_received: Indicates whether the patient received one or more SMS reminders about their appointment. Represented by a numeric value, typically 1 if one or more messages were sent, and 0 otherwise.
 * No-show: This is a binary field with values True or False, indicating whether the patient attended the appointment, where True means the patient did not show up for the appointment, and False means they did.
 
+  
+# Visualization Area
+   * The following visualizations have been generated from the analysis code to provide a clearer understanding of the key insights:
+     <img width="913" alt="image" src="https://github.com/user-attachments/assets/238969df-c79f-4846-95b8-33f6f0302d2d">
+     <img width="671" alt="image" src="https://github.com/user-attachments/assets/03e044f3-da5a-47c6-aaea-4c746e521357">
+
+
 # Conclusions
 After conducting a thorough analysis of the data, examining the variables, and identifying correlations, the following insights were obtained:
 1. Key Factors for Predicting Patient Attendance:
@@ -42,10 +49,6 @@ After conducting a thorough analysis of the data, examining the variables, and i
 5. Importance of Appointment Reminders:
     * A significant number of patients (approximately 12,535) did not receive a reminder message before their appointment.
        * Recommendation: Ensure that reminder messages are sent to all patients before their appointments, as this could significantly reduce no-show rates.
-
-# Visualization Area
-   * The following visualizations have been generated from the analysis code to provide a clearer understanding of the key insights:
-     <img width="913" alt="image" src="https://github.com/user-attachments/assets/238969df-c79f-4846-95b8-33f6f0302d2d">
 
 
 
